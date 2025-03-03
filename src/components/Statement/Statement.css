@@ -1,0 +1,21 @@
+.statement-component {
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'Switzer Bold';
+    color: #001255;
+    box-shadow: 10px 10px 10px 10px #001255;
+}
+
+@media (max-width: 600px) {
+    .statement-component {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+

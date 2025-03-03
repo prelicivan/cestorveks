@@ -1,0 +1,41 @@
+.partners-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.partners-header {
+    font-size: 2.8rem;
+    font-family: 'Switzer Bold';
+    color: #001255;
+    padding-top: 1rem;
+}
+
+.partners-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.partner img {
+    max-width: 250px;
+}
+
+@media (max-width: 600px) {
+    .partners-list {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .partner img {
+        max-width: 300px;
+    }
+}
