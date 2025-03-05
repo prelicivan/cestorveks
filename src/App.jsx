@@ -5,6 +5,7 @@ import Home from './components/Home/Home'
 import Work from './components/Work/Work'
 import Contact from './components/Contact/Contact'
 import ScrollToTop from './components/util/ScrollToTop'
+import FooterTrademark from './components/Footer/FooterTrademark'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/kontakt" element={<Contact />} exact />
           </Routes>
         </ScrollToTop>
+        <FooterTrademark />
       </Router>
     </>
   )

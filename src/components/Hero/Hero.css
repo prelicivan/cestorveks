@@ -15,12 +15,14 @@
 .hero-logo {
     width: auto;
     height: 40vh;
+    padding: 1rem;
 }
 
 .hero-text {
     color: #fff;
     font-size: 1.8rem;
     text-align: center;
+    padding: 0 1rem 0 1rem;
 }
 
 @media (max-width: 600px) {

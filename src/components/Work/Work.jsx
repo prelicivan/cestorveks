@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Work.css'
-import Footer from '../Footer/Footer';
+import Footer from '../Footer/FooterContact';
 import WorkItems from '../WorkItems/WorkItems';
 import { workDataObjOne } from '../Home/Data'; 
 

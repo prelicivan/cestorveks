@@ -7,9 +7,23 @@ import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);  
+  const [button, setButton] = useState(true);
+
   const handleClick = () => setClick(!click);
   
   const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  }
+
+  useEffect(() => {
+    showButton();
+  }, []);
 
   return (
     <IconContext.Provider value={{ color: "#001255" }}>
@@ -38,6 +52,13 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          <li className="nav-btn">
+              {button ? (
+                <Link to="" className="btn-link" spy={true} smooth={true} offset={50} duration={500}/>
+              ) : (
+                <Link className="btn-link" onClick={closeMobileMenu} spy={true} smooth={true} offset={50} duration={500} />
+              )}
+            </li>
         </div>
       </div>
     </IconContext.Provider>
