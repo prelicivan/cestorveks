@@ -1,0 +1,99 @@
+.contact-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 87vh;
+    color: #022552;
+    padding: 2rem;
+    background-image: url("/images/backgrounds/Graficki elementi-07.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-info {
+    width: 40vw;
+    align-self: flex-start;
+    margin-top: 6.5rem;
+}
+
+.contact-info h3 {
+    font-size: 3rem;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+}
+
+.contact-info a {
+    font-size: 1.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 40vw;
+}
+
+.contact-form button {
+    font-size: 1.5rem;
+    border: none;
+    background-color: #001255;
+    color: white;
+    width: 6rem;
+    height: 2.2rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+}
+
+.text-area {
+    height: 10rem;
+}
+
+@media (max-width: 600px) {
+    .contact-component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4rem;
+        height: 97vh;
+        padding: 1rem;
+    }
+
+    .contact-info {
+        align-self: inherit;
+        text-align: center;
+        width: 90vw;
+        margin-top: 1.5rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 90vw;
+    }
+
+    .contact-form h1 {
+        text-align: center;
+    }
+
+    .contact-form button {
+        font-size: 1.5rem;
+        width: 8rem;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1500px) {
+    .contact-component {
+        height: 91vh;
+ 
+    }
+}

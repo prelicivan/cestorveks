@@ -35,6 +35,10 @@
         gap: 2rem;
     }
 
+    .partners-header {
+        margin-bottom: 1rem;
+    }
+
     .partner img {
         max-width: 300px;
     }

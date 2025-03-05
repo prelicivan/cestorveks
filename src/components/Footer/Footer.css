@@ -44,8 +44,14 @@ h3 {
         gap: 1.5rem;
     }
 
+    .footer-wrap {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
     h3 {
         align-self: center;
+        font-size: 1.2rem;
     }
     
     .footer-trademark {

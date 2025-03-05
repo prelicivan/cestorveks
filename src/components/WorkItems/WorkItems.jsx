@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './WorkItems.css'
 import { FaFilePdf } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 function WorkItems({
     img1, title1, desc1, img2, title2, desc2, img3, title3, desc3, img4, title4, desc4, img5, title5, desc5, img6, title6, desc6, img7, title7, desc7,
@@ -23,12 +24,12 @@ function WorkItems({
 
             <div className="work-items-footer">
                 Za više informacija o ponudi preuzmite dokument: 
-                    <a href="/documents/Katalog.pdf" target="_blank" rel="noopener noreferrer">
-                        <FaFilePdf className='pdf-icon'/>   
-                        Katalog_ponude.pdf
-                    </a>
+                <a href="/documents/Katalog.pdf" target="_blank" rel="noopener noreferrer">
+                    <FaFilePdf className='pdf-icon'/>   
+                    Katalog_ponude.pdf
+                </a>
             </div>
-
+        
             {selectedCategory === "clips" && (
                 <div className="clips">
                     {[{ img: img1, title: title1, desc: desc1 },

@@ -1,82 +1,41 @@
 import React, { useState, useEffect } from "react";
-import { Link as ScrollLink, scroller } from "react-scroll";
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useNavigate, Link as RouterLink, useLocation } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 import { IconContext } from "react-icons/lib";
 import logo from "/images/logos/Cestor Veks-RGB.svg";
 import "./Navbar.css";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
-
+  const [click, setClick] = useState(false);  
   const handleClick = () => setClick(!click);
+  
   const closeMobileMenu = () => setClick(false);
 
-  const handleScrollNavigation = (section) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        scroller.scrollTo(section, {
-          smooth: true,
-          duration: 500,
-          offset: -20
-        });
-      }, 100); // Delay to ensure the page has loaded
-    } if (location.pathname !== "/delatnost") {
-      navigate("/delatnost");
-      setTimeout(() => {
-        scroller.scrollTo(section, {
-          smooth: true,
-          duration: 500,
-          offset: 0
-        })
-      }, 100)
-    } 
-    else {
-      scroller.scrollTo(section, {
-        smooth: true,
-        duration: 500,
-        offset: -50
-      });
-    }
-    closeMobileMenu();
-  };
-
   return (
-    <IconContext.Provider value={{ color: "" }}>
+    <IconContext.Provider value={{ color: "#001255" }}>
       <div className="navbar">
         <div className="navbar-container container">
-          <ScrollLink 
-            to="hero" 
-            className="navbar-logo" 
-            onClick={() => handleScrollNavigation("hero")}
-            spy={true} 
-            smooth={true} 
-            duration={500}
-          >
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} className="navbar-img" />
-          </ScrollLink>
+          </Link>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <button className="nav-links" onClick={() => handleScrollNavigation("about")}>
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 O nama
-              </button>
+              </Link>
             </li>
             <li className="nav-item">
-              <button className="nav-links" onClick={() => handleScrollNavigation("work-items")}>Delatnost</button>
-              {/* <RouterLink to="/delatnost" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/delatnost" className="nav-links" onClick={closeMobileMenu}>
                 Delatnost
-              </RouterLink> */}
+                </Link>
             </li>
             <li className="nav-item">
-              <button className="nav-links" onClick={() => handleScrollNavigation("footer")}>
+              <Link to="/kontakt" className="nav-links" onClick={closeMobileMenu}>
                 Kontakt
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

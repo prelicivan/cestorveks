@@ -84,3 +84,15 @@
 .pdf-icon {
     color: darkred;
 }
+
+@media (max-width: 600px) {
+    .work-items-footer {
+        text-align: center;
+    }
+
+    .pdf-icon {
+        margin-left: 2rem;
+    }
+
+    
+}
