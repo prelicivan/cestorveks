@@ -6,6 +6,7 @@ import Work from './components/Work/Work'
 import Contact from './components/Contact/Contact'
 import ScrollToTop from './components/util/ScrollToTop'
 import FooterTrademark from './components/Footer/FooterTrademark'
+import NavbarTest from './components/Navbar/NavbarTest'
 
 function App() {
 

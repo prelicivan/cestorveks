@@ -52,13 +52,13 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <li className="nav-btn">
+          {/* <li className="nav-btn">
               {button ? (
                 <Link to="" className="btn-link" spy={true} smooth={true} offset={50} duration={500}/>
               ) : (
                 <Link className="btn-link" onClick={closeMobileMenu} spy={true} smooth={true} offset={50} duration={500} />
               )}
-            </li>
+            </li> */}
         </div>
       </div>
     </IconContext.Provider>

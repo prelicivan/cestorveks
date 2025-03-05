@@ -94,7 +94,7 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 80px;
     left: 100%;
     opacity: 1;
@@ -130,7 +130,7 @@
   }
 
   .navbar-logo {
-    position: center;
+    position: absolute;
     top: 0;
     left: 0;
     padding-left: 2vw;
@@ -147,6 +147,11 @@
     cursor: pointer;
   }
 
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
   .nav-btn {
     display: flex;
     justify-content: center;
@@ -157,10 +162,6 @@
 
   .navbar-img {
     width: 65vw;
-  }
-
-  .navbar-container {
-    justify-content: center;
-    align-items: center;
+    margin-left: 0.5rem;
   }
 }
