@@ -8,7 +8,7 @@
 }
 
 .partners-header {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-family: 'Switzer Bold';
     color: #001255;
     padding-top: 1rem;
@@ -36,10 +36,22 @@
     }
 
     .partners-header {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .partner img {
         max-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .partners-header  {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .partners-header {
+        font-size: 2.5rem;
     }
 }

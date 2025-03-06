@@ -35,6 +35,10 @@ h3 {
 }
 
 @media (max-width: 600px) {
+    .footer-component {
+        height: 28vh;
+    }
+    
     .footer-wrap {
         display: flex;
         flex-direction: column;
@@ -42,19 +46,24 @@ h3 {
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-    }
-
-    .footer-wrap {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
     h3 {
         align-self: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
-    
-    .footer-trademark {
-        font-size: 0.8rem;
+}
+
+@media (max-width: 400px) {
+    .footer-component {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer-component {
+        height: 45vh;
     }
 }

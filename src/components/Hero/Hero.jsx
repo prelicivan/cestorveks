@@ -6,7 +6,7 @@ function Hero () {
 
     return (
         <div className="hero-component" id="hero">
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} viewport={{ once: true }} >
+            <motion.div className="hero-content" initial={{ opacity: 0 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} viewport={{ once: true }} >
                 <img src={logo} className="hero-logo" />
                 <div className="hero-text">
                     Energija za svetliju budućnost

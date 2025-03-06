@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 87vh;
+    height: 88vh;
     color: #022552;
     padding: 2rem;
     background-image: url("/images/backgrounds/Graficki elementi-07.png");
@@ -59,6 +59,11 @@
         margin-top: 11rem;
         margin-left: 5rem;
     }
+
+    .contact-component {
+        height: 91vh;
+ 
+    }
 }
 
 @media (max-width: 600px) {
@@ -68,7 +73,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 4rem;
-        height: 97vh;
+        height: 88vh;
         padding: 1rem;
     }
 
@@ -99,9 +104,23 @@
     }
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 420px) {
     .contact-component {
-        height: 91vh;
+        height: 93vh;
+    }
+
+    .contact-info h3 {
+        font-size: 2.6rem;
+    }    
+}
+
+@media (max-width: 380px) {
+    .contact-component {
+        height: 115vh;
  
     }
+
+    .contact-info h3 {
+        font-size: 2.4rem;
+    }    
 }

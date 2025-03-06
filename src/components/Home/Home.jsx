@@ -2,7 +2,6 @@ import About from "../About/About";
 import Footer from "../Footer/FooterContact";
 import Hero from "../Hero/Hero";
 import Partners from "../Partners/Partners";
-import Statement from "../Statement/Statement";
 
 function Home() {
     return (

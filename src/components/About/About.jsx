@@ -11,12 +11,10 @@ function About({
 }) {
     return(
         <div className="about-us-component" id="about"> 
-            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} viewport={{ once: true }} >
-            <div className="about-text">
+            <motion.div className="about-text" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} viewport={{ once: true }} >
                 <h2>O nama</h2>
                 <p>Firma CESTOR-VEKS doo je osnovana 2003. Godine sa sedistem u Krusevcu. Od 2012.godine poseduje licencu za obavljanje energetske delatnosti snabdevanje prirodnim gasom, sa rokom vazenja licence od 10 godina.</p>
                 <p>Usvajanjem novog Zakona o energetici 2014 godine, svi krajnji kupci prirodnog gasa imaju pravo da slobodno biraju svog snabdevaca na trzistu pocevsi od 1. Januara 2015. Godine. Kupci koji nemaju pravo na javno snabdevanje kupuju prirodni gas od licenciranih snabdevaca na slobodnom trzistu.</p>
-            </div>
             </motion.div>
         </div>
     )

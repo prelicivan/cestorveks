@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <IconContext.Provider value={{ color: "#001255" }}>
       <div className="navbar">
-        <div className="navbar-container container">
+        {/* <div className="navbar-container container"> */}
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} className="navbar-img" />
           </Link>
@@ -52,14 +52,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {/* <li className="nav-btn">
-              {button ? (
-                <Link to="" className="btn-link" spy={true} smooth={true} offset={50} duration={500}/>
-              ) : (
-                <Link className="btn-link" onClick={closeMobileMenu} spy={true} smooth={true} offset={50} duration={500} />
-              )}
-            </li> */}
-        </div>
+        {/* </div> */}
       </div>
     </IconContext.Provider>
   );
