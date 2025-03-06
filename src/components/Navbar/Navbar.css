@@ -10,6 +10,7 @@
   z-index: 999;
   font-family: 'Switzer Regular', 'sans-serif';
   width: 100%;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.03);
 }
 
 /* .navbar-container {
