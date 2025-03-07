@@ -1,7 +1,8 @@
 .footer-trademark {
     text-align: center;
     padding: 0.3rem;
-    color: #022552;
+    background-color: #022552;
+    color: #fff;
 }
 
 @media (max-width: 600px) {

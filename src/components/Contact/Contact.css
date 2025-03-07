@@ -114,10 +114,42 @@
     }    
 }
 
+@media (max-width: 390px) {
+    .contact-component {
+        height: 115vh;
+ 
+    }
+
+    .contact-info h3 {
+        font-size: 2.4rem;
+    }    
+}
+
 @media (max-width: 380px) {
     .contact-component {
         height: 115vh;
  
+    }
+
+    .contact-info h3 {
+        font-size: 2.4rem;
+    }    
+}
+
+
+@media (max-width: 375px) {
+    .contact-component {
+        height: 120vh;
+    }
+
+    .contact-info h3 {
+        font-size: 2.4rem;
+    }    
+}
+
+@media (max-width: 330px) {
+    .contact-component {
+        height: 133vh;
     }
 
     .contact-info h3 {
