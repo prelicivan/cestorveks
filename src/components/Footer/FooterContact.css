@@ -30,6 +30,10 @@ h3 {
     flex-direction: column;
 }
 
+.footer-docs a {
+    color: inherit;
+}
+
 .footer-docs a:visited {
     color: inherit;
 }
@@ -64,7 +68,7 @@ h3 {
 
 @media (max-width: 390px) {
     .footer-component {
-        height: 48vh;
+        height: 46vh;
     }
 }
 
