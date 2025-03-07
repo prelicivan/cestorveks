@@ -62,8 +62,14 @@ h3 {
     }
 }
 
+@media (max-width: 390px) {
+    .footer-component {
+        height: 48vh;
+    }
+}
+
 @media (max-width: 380px) {
     .footer-component {
-        height: 46vh;
+        height: 48vh;
     }
 }
