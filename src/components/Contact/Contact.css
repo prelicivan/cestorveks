@@ -6,7 +6,7 @@
     height: 88vh;
     color: #022552;
     padding: 2rem;
-    background-image: url("/images/backgrounds/Graficki elementi-07.png");
+    background-image: url("/images/backgrounds/Graficki elementi-07.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,6 +47,32 @@
     border-radius: 5px;
     margin-top: 0.5rem;
     align-self: flex-end;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+textarea{
+    font-size: 1.2rem;
+    color: #001255;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+    resize: vertical;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+}
+
+textarea:focus {
+    border: 1px solid #B2C3CD;
+}
+
+.name-area {
+    height: 2.8rem;
+}
+
+.mail-area {
+    height: 2.9rem;
 }
 
 .text-area {
@@ -101,6 +127,10 @@
         height: 2.5rem;
         margin-top: 0.5rem;
         align-self: center;
+    }
+
+    textarea:focus {
+        border: none;
     }
 }
 
