@@ -24,7 +24,7 @@ function WorkItems({
                 Za više informacija o ponudi preuzmite dokument: 
                 <a href="/documents/Katalog.pdf" target="_blank" rel="noopener noreferrer">
                     <FaFilePdf className='pdf-icon'/>   
-                    Katalog_ponude.pdf
+                    Katalog kompresora za CNG.pdf
                 </a>
             </div>
         
