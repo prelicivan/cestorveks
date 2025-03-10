@@ -6,11 +6,11 @@ import { motion } from 'framer-motion'
 
 function Partners() {
     return (
-        <motion.div className="partners-component" initial={{ opacity: 0 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} viewport={{ once: true }} >
+        <div className="partners-component"  >
             <div className="partners-header">
                 Naši partneri
             </div>
-            <div className="partners-list">
+            <motion.div className="partners-list" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }} viewport={{ once: true }}>
                 <div className="partner">
                     <a href="https://www.linkedin.com/company/bossconstruction/?originalSubdomain=rs" target="_blank" rel="noopener noreferrer" className="partner-link">
                         <img src={img1} />
@@ -26,8 +26,8 @@ function Partners() {
                             <img src={img2} />
                     </a>
                 </div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </div>
     )
 }
 

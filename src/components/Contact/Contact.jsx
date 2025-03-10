@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Contact() {
     return (
         <div className="contact-component" >
-                <motion.div className="contact-info" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} viewport={{ once: true }}>
+                <motion.div className="contact-info" initial={{ opacity: 0, x: -25 }} whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }} viewport={{ once: true }}>
                     <h3>Kontaktirajte nas!</h3>
                     <p className='address'>Adresa: Jastrebačka br. 10, 37000 Kruševac</p>
                     <p className='telephone'>Broj telefona: 037/422-969</p>

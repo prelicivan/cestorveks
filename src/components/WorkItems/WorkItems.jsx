@@ -37,19 +37,19 @@ function WorkItems({
 
 
             {selectedCategory === "clips" && (
-                <div className="clips">
+                <div className="clips" >
                     {[{ img: img1, title: title1, desc: desc1 },
                     { img: img2, title: title2, desc: desc2 },
                     { img: img3, title: title3, desc: desc3 },
                     { img: img4, title: title4, desc: desc4 },
                     { img: img5, title: title5, desc: desc5 }].map((item, index) => (
-                        <div key={index} className="work-item">
+                        <motion.div key={index} className="work-item" initial={{ opacity: 0.6, y: 30 }} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }} viewport={{ once: true }}>
                             <h3>{item.title}</h3>
                             <div className="work-item-container">
                                 <img src={item.img} alt={item.title} />
                                 {/* <p>{item.desc}</p> */}
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             )}
@@ -58,13 +58,13 @@ function WorkItems({
                 <div className="hidraulics">
                     {[{ img: img6, title: title6, desc: desc6 },
                     { img: img7, title: title7, desc: desc7 }].map((item, index) => (
-                        <div key={index} className="work-item">
+                        <motion.div key={index} className="work-item" initial={{ opacity: 0.6, y: 30 }} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }} viewport={{ once: true }}>
                             <h3>{item.title}</h3>
                             <div className="work-item-container">
                                 <img src={item.img} alt={item.title} />
                                 {/* <p>{item.desc}</p> */}
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             )}
@@ -79,13 +79,13 @@ function WorkItems({
                     { img: img13, title: title13, desc: desc13 },
                     { img: img14, title: title14, desc: desc14 },
                     { img: img15, title: title15, desc: desc15 }].map((item, index) => (
-                        <div key={index} className="work-item">
+                        <motion.div key={index} className="work-item" initial={{ opacity: 0.6, y: 30 }} whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }} viewport={{ once: true }}>
                             <h3>{item.title}</h3>
                             <div className="work-item-container">
                                 <img src={item.img} alt={item.title} />
                                 {/* <p>{item.desc}</p> */}
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             )}

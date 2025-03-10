@@ -35,4 +35,19 @@
         height: 30vh;
         width: auto;
     }
+
+    .hero-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-logo {
+        height: 30vh;
+        width: auto;
+    }
+
+    .hero-text {
+        font-size: 1.3rem;
+    }
 }
