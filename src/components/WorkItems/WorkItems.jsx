@@ -16,10 +16,8 @@ function WorkItems({
                 Delatnost
             </div>
 
-            <div className="category-buttons">
-                <button onClick={() => setSelectedCategory("clips")} className={selectedCategory === "clips" ? "active" : ""}>Klipni Kompresori</button>
-                <button onClick={() => setSelectedCategory("hidraulics")} className={selectedCategory === "hidraulics" ? "active" : ""}>Hidraulicni Kompresori</button>
-                <button onClick={() => setSelectedCategory("cng")} className={selectedCategory === "cng" ? "active" : ""}>CNG Komponente</button>
+            <div className="work-desc">
+                Cestor Veks doo Krusevac je po Ugovoru broj 49 od 01.04.2016. godine ovlasceni distributer i serviser kompresora za CNG marke SICOM iz Italije za Srbiju, Kosovo, Makedoniju, Hrvatsku, Bosnu i Hercegovinu, Sloveniju i Mađarsku.
             </div>
 
             <div className="work-items-footer">
@@ -30,6 +28,14 @@ function WorkItems({
                 </a>
             </div>
         
+
+            <div className="category-buttons">
+                <button onClick={() => setSelectedCategory("clips")} className={selectedCategory === "clips" ? "active" : ""}>Klipni Kompresori</button>
+                <button onClick={() => setSelectedCategory("hidraulics")} className={selectedCategory === "hidraulics" ? "active" : ""}>Hidraulicni Kompresori</button>
+                <button onClick={() => setSelectedCategory("cng")} className={selectedCategory === "cng" ? "active" : ""}>CNG Komponente</button>
+            </div>
+
+
             {selectedCategory === "clips" && (
                 <div className="clips">
                     {[{ img: img1, title: title1, desc: desc1 },

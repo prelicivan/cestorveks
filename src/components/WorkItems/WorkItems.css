@@ -14,6 +14,13 @@
     font-family: 'Switzer Bold', 'sans-serif'
 }
 
+.work-desc {
+    width: 90%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 .category-buttons {
     display: flex;
     gap: 1rem;
