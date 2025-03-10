@@ -32,6 +32,7 @@ h2 {
     .about-us-component {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
     }
 
     .about-text {
